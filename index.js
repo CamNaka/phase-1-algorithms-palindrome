@@ -1,9 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  if(word.split('').reverse().join('') === word) {
+    return true
+  }
+  else{
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
+
+  if (word) is equal to 'racecar', 'abba', 'a' 
+    then we will return 'true'
+  but if (word) is equal to 'robot', 'ab'
+    then we will return false
 */
 
 /*
